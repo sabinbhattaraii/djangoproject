@@ -1,0 +1,14 @@
+/* we can write any css component that we want inside this file for the web site */
+body{
+    background:white url('images/background.png')
+}
+
+/* <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous"> */
+
+.navbar{
+    border-radius:0; 
+}
+
+.navbar-brand{
+    font-family:'Satisfy',cursive; 
+}

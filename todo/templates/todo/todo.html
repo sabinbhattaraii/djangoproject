@@ -1,0 +1,22 @@
+<h1>This is the todo app</h1>
+
+{% comment %} <ul> 
+<li>temporarty todo item A</li>
+<li>temprory todo item B</li>
+</ul> {% endcomment %}
+<ul>
+    {% for todo_items in all_items %}
+    <li> {{todo_items.content}}
+    <form action='/deleteTodo/{{ todo_items.id }}/'
+        style ='display:inline;'
+        method = 'post'> {% csrf_token%}
+        <input type = 'submit' value = 'Delete' />
+    </form>
+    </li>
+    {% endfor %}
+</ul>
+
+<form action = '/addTodo/' method='Post'>{% csrf_token %}
+    <input type ='text' name = 'content'/>
+    <input type ='submit' value='ADDTODO'/>
+    </form>
